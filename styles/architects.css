@@ -99,7 +99,7 @@ main > section {
 }
 .banner-image {
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 130px;
 }
 /* Main section */
 
@@ -131,9 +131,36 @@ main > section {
   margin-bottom: 32px;
 }
 /* Responsive Media Query */
+/* smaller device */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links {
+  .nav-links,
+  .teams {
     flex-direction: column;
+  }
+  .team-pictures {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+  }
+  .feature-section {
+    margin: 0 20px 0 20px;
+    text-align: center;
+  }
+  main > section {
+    margin-top: 50px;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .team-pictures {
+    margin-bottom: 70px;
+  }
+  .feature-section {
+    margin: 0 20px 0 20px;
+    text-align: center;
   }
 }
