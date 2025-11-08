@@ -60,6 +60,10 @@ main > section {
 .section-description {
   font-size: 1rem;
   line-height: 1.6;
+  max-width: 542px;
+}
+.text-center {
+  text-align: center;
 }
 /* header styles */
 
@@ -135,7 +139,6 @@ main > section {
 }
 /* Some facts section */
 #facts-description {
-  max-width: 542px;
   margin-bottom: 100px;
 }
 /* Fact container section */
@@ -164,6 +167,20 @@ main > section {
   font-size: 1.25rem;
   margin-top: 5px;
 }
+/* Sponsor Section */
+#sponsor-description {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.sponsor-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-img > img {
+  width: 166px;
+  height: 50px;
+  filter: grayscale(100%); /* Want to convert pictures to grey */
+}
 /* Responsive Media Query */
 /* smaller device */
 @media screen and (max-width: 576px) {
@@ -173,7 +190,8 @@ main > section {
     flex-direction: column;
   }
   .team-pictures,
-  .fact-container {
+  .fact-container,
+  .sponsor-img {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 40px;
   }
@@ -181,6 +199,10 @@ main > section {
     justify-items: center;
     margin-left: 0px;
     gap: 24px;
+  }
+  .sponsor-img {
+    justify-items: center;
+    gap: 60px;
   }
   .feature-section {
     margin: 0 20px 0 20px;
@@ -223,12 +245,16 @@ main > section {
   }
   .fact-container {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 40px;
     justify-items: center;
     margin-left: 0px;
     gap: 24px;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
+  }
+  .sponsor-img {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
   }
 }
