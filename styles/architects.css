@@ -218,6 +218,17 @@ main > section {
   height: 50px;
   filter: grayscale(100%); /* Want to convert pictures to grey */
 }
+/* Footer section */
+footer {
+  max-width: 1440px;
+  margin: 130px auto 216px auto;
+  padding: 39px 0;
+  background-color: #fff4e7;
+}
+.footer-section {
+  font-size: 1.25rem;
+  text-align: center;
+}
 /* Responsive Media Query */
 /* smaller device */
 @media screen and (max-width: 576px) {
