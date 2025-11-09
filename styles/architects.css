@@ -137,6 +137,33 @@ main > section {
 #feature-description {
   margin-bottom: 32px;
 }
+/* Features will enjoy section */
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+}
+#feature-section-description {
+  margin-bottom: 30px;
+}
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.feature-card {
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.feature-img {
+  width: 708px;
+  height: 982px;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+}
 /* Some facts section */
 #facts-description {
   margin-bottom: 100px;
