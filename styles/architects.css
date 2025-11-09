@@ -157,12 +157,22 @@ main > section {
   border-radius: 8px;
 }
 .feature-img {
-  width: 708px;
-  height: 982px;
+  width: 100%;
 }
-.features {
+.features-section {
   display: flex;
-  justify-content: space-between;
+  gap: 150px;
+}
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.56rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -123px;
+}
+#experience-year {
+  font-weight: 700;
+  font-size: 4.06rem;
 }
 /* Some facts section */
 #facts-description {
@@ -213,7 +223,8 @@ main > section {
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .features-section {
     flex-direction: column;
   }
   .team-pictures,
@@ -235,6 +246,7 @@ main > section {
     margin: 0 20px 0 20px;
     text-align: center;
   }
+
   .section-title,
   .section-description {
     text-align: center;
@@ -245,6 +257,16 @@ main > section {
   .banner-image {
     margin-bottom: 50px;
   }
+  .features-section {
+    gap: 0px;
+    margin: 50px 20px 0 20px;
+  }
+  .features-section .section-description {
+    text-align: left;
+  }
+  #experience-badge {
+    margin: 20px 0 20px 0;
+  }
   main > section {
     margin-top: 50px;
   }
@@ -252,7 +274,8 @@ main > section {
 
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features-section {
     flex-direction: column;
   }
   .team-pictures {
@@ -283,5 +306,18 @@ main > section {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 50px;
+  }
+  .features-section {
+    gap: 0px;
+    margin: 50px 20px 0 20px;
+  }
+  .features-section .section-description {
+    text-align: left;
+  }
+  .features-section .section-title {
+    text-align: left;
+  }
+  #experience-badge {
+    margin: 20px 0 0 0;
   }
 }
